@@ -17,5 +17,6 @@ if [ -d "/mnt/c/Users/whood" ]; then
 fi
 
 git add *
+git add .tmux.conf
 git commit -m "Automatically updated configs"
 git push
