@@ -15,4 +15,13 @@ endif
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tc50cal/vim-terminal'
+Plug 'preservim/tagbar'
 call plug#end()
+
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
