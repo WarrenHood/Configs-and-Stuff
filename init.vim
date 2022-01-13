@@ -33,3 +33,11 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+" Escape without using escape
+"inoremap jk <Esc>
+"inoremap kj <Esc>
+
+inoremap <C-s> <Esc>:w<CR>
+inoremap <C-q> <Esc>:wq<CR>
+inoremap <C-c> <Esc>
+" Testing
