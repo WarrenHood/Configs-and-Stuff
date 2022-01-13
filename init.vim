@@ -27,6 +27,7 @@ Plug 'liuchengxu/vim-clap'
 Plug 'junegunn/fzf', { 'dir': '~/opt/fzf' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-commentary'
+Plug 'github/copilot.vim'
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
