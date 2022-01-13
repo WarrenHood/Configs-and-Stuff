@@ -37,7 +37,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "inoremap jk <Esc>
 "inoremap kj <Esc>
 
-inoremap <C-s> <Esc>:w<CR>
-inoremap <C-q> <Esc>:wq<CR>
-inoremap <C-c> <Esc>
-" Testing
+nnoremap <C-s> <Esc>:w<CR>
+nnoremap <C-q> <Esc>:wq<CR>
+nnoremap <C-c> <Esc>
