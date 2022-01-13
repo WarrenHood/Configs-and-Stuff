@@ -1,0 +1,16 @@
+function test   (    )   {
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+function b ()    {     }

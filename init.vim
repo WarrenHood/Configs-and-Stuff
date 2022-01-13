@@ -52,3 +52,9 @@ nnoremap <C-s> <Esc>:w<CR>
 nnoremap <C-q> <Esc>:wq<CR>
 
 nnoremap <C-c> <Esc>
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+
+
+
+
