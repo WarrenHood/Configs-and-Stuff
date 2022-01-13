@@ -5,6 +5,8 @@ git pull
 
 cp init.vim ~/.config/nvim/init.vim
 
+# Apply tmux stuff
+cp .tmux.conf ~/.tmux.conf
 
 # WSL specific stuff
 if [ -d "/mnt/c/Users/User" ]; then

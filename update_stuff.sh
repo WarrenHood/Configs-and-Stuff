@@ -1,8 +1,11 @@
 #!/bin/bash
 
+
 cd ~/config_stuff
 cp ~/.config/nvim/init.vim ~/config_stuff/init.vim
 
+# Update tmux conf
+cp ~/.tmux.conf ~/config_stuff/.tmux.conf
 
 # Some WSL specific stuff
 if [ -d "/mnt/c/Users/User" ]; then
