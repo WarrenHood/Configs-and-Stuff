@@ -421,8 +421,9 @@ background_opacity: 0.95
 #   - (Windows) powershell
 shell:
   program: bash
-#  args:
-#    - --login
+  args:
+    - --login
+    - "tmux attach || tmux"
 
 # Startup directory
 #
