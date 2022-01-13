@@ -19,9 +19,17 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tc50cal/vim-terminal'
 Plug 'preservim/tagbar'
+Plug 'neoclide/coc.nvim'
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+
+" use <c-space>for trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
