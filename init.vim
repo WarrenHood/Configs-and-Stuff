@@ -1,11 +1,13 @@
 set number
 set relativenumber
 set autoindent
+set smartindent
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
 set mouse=a
+set clipboard+=unnamedplus
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -37,6 +39,10 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "inoremap jk <Esc>
 "inoremap kj <Esc>
 
+inoremap <C-s> <Esc>:w<CR>
+inoremap <C-q> <Esc>:wq<CR>
+
 nnoremap <C-s> <Esc>:w<CR>
 nnoremap <C-q> <Esc>:wq<CR>
+
 nnoremap <C-c> <Esc>
