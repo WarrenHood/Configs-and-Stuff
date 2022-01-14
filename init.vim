@@ -24,6 +24,9 @@ Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim'
 call plug#end()
 
+" Allow saving as root with :Sw
+command! -nargs=0 Sw w !sudo tee % > /dev/null
+
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
