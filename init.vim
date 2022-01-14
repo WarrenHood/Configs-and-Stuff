@@ -22,12 +22,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tc50cal/vim-terminal'
 Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim'
-Plug 'glepnir/dashboard-nvim'
-Plug 'liuchengxu/vim-clap'
-Plug 'junegunn/fzf', { 'dir': '~/opt/fzf' }
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-commentary'
-Plug 'github/copilot.vim'
 call plug#end()
 
 " Allow saving as root with :Sw
@@ -55,9 +49,3 @@ nnoremap <C-s> <Esc>:w<CR>
 nnoremap <C-q> <Esc>:wq<CR>
 
 nnoremap <C-c> <Esc>
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-
-
-
-
