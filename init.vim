@@ -30,6 +30,7 @@ Plug 'tpope/vim-commentary'
 Plug 'github/copilot.vim'
 call plug#end()
 
+"									<Keybindings>
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -57,6 +58,10 @@ nnoremap <C-q> <Esc>:wq<CR>
 
 nnoremap <C-c> <Esc>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+"									<Auto commands>
+autocmd BufWritePre *.py,*.js,*.c,*.cs,*.xml,*.html,*.css,*.h,*.hpp,*.h,*.cpp,*.asm,*.json,*.yml Prettier
+autocmd BufWritePre *.rs call CocAction('format')
 
 
 
